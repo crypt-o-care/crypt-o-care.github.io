@@ -1,806 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-	<!-- Basic Page Needs -->
+
+<head>
     <meta charset="utf-8">
-    <title>Cryptcon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Crypt-o-Care</title>
 
-	<!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link type="image/x-icon" href="images/fav-icon.png" rel="icon">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/color.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
 
 </head>
-	<body>
 
-		<!-- Start preloader -->
-		<div id="preloader"></div>
-		<!-- End preloader -->
+<body>
 
-		<!-- Top scroll -->
-		<div class="top-scroll transition">
-			<a href="index.html#banner" class="scrollTo"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-		</div>	
-		<!-- Top scroll End -->
-		<header class="transition">
-			<div class="container">
-				<div class="row flex-align">
-					<div class="col-lg-4 col-md-3 col-8">
-						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" class="transition" alt="Cryptcon"></a>
-						</div>
-					</div>
-					<div class="col-lg-8 col-md-9 col-4 text-right">
-						<div class="menu-toggle">
-							<span></span>
-						</div>
-						<div class="menu">
-							<ul class="d-inline-block">
-								<li class="mega-menu">
-									<span class="opener plus"></span>
-									<a href="index.html">Casaxx</a>
-									<ul class="transition">
-										<li><a href="index.html">Home One</a></li>
-										<li><a href="index-2.html">Home Two</a></li>
-									</ul>
-								</li>
-								<li class="mega-menu">
-									<span class="opener plus"></span>
-									<a href="about.html">Pages</a>
-									<ul class="transition">
-										<li><a href="about.html">About</a></li>
-										<li><a href="blog-list.html">Blog</a></li>
-										<li><a href="token-sale.html">Token Sale</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="404.html">404 Page</a></li>
-									</ul>
-								</li>
-								<li><a href="feature.html">Feature</a></li>
-								<li><a href="roadmap.html">Roadmap</a></li>
-								<li><a href="team.html">Team</a></li>
-							</ul>
-							<div class="signin d-inline-block">
-								<a href="index.html#" class="btn">Sign in</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+    <header>
 
-		<section class="home-banner" id="banner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 position-u flex-align wow fadeInLeft">
-						<div class="banner-contain">
-							<h1 class="banner-heading">Invest In <span>Cryptocoin</span> Way To Trade</h1>
-							<p class="banner-des">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
-							<a href="index.html#" class="btn">Learn more</a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 position-u wow fadeInRight">
-						<div class="banner-img">
-							<img src="images/about-2.png" alt="banner">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="/img/logo.png" height="48" alt="CoolBrand">
+                </a>
+            </div>
+        </nav>
 
-		<section class="work-part lightskyblue ptb-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="section-heading text-center pb-65">
-							<label class="sub-heading">what is cryptcon</label>
-							<h2 class="heading-title">How it Works</h2>
-							<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 text-center flex-align justify-center wow fadeInLeft">
-						<div class="work-box">
-							<div class="work-box-bg"></div>
-							<img src="images/work-process.png" class="rotation-img" alt="Work Process">
-						</div>
-					</div>
-					<div class="col-md-6 flex-align wow fadeInRight">
-						<div class="work-box">
-							<h3 class="work-process-title pb-25">We’ve built a platform to buy and sell shares.</h3>
-							<p class="work-des pb-20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
 
-							<ul class="check-list">
-								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p></li>
-								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p></li>
-								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    </header>
 
-		<section class="feature-part pt-100 pb-10">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="section-heading text-center pb-65">
-							<label class="sub-heading">cryptcon Feature</label>
-							<h2 class="heading-title">Best Features</h2>
-							<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 wow fadeInUp pb-80">
-						<div class="feature-box">
-							<div class="feature-icon">
-								<img src="images/feature-1.png" alt="Safe & Secure">
-							</div>
-							<div class="feature-contain pt-25">
-								<a href="feature.html" class="feature-title">Safe & Secure</a>
-								<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum dolor sit amet. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeInUp pb-80">
-						<div class="feature-box">
-							<div class="feature-icon">
-								<a href="feature.html"><img src="images/feature-2.png" alt="Early Bonus"></a>
-							</div>
-							<div class="feature-contain pt-25">
-								<a href="feature.html" class="feature-title">Early Bonus</a>
-								<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum dolor sit amet. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeInUp pb-80">
-						<div class="feature-box">
-							<div class="feature-icon">
-								<a href="feature.html"><img src="images/feature-3.png" alt="Univarsal Access"></a>
-							</div>
-							<div class="feature-contain pt-25">
-								<a href="feature.html" class="feature-title">Univarsal Access</a>
-								<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum dolor sit amet. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeInUp pb-80">
-						<div class="feature-box">
-							<div class="feature-icon">
-								<a href="feature.html"><img src="images/feature-4.png" alt="Secure Storage"></a>
-							</div>
-							<div class="feature-contain pt-25">
-								<a href="feature.html" class="feature-title">Secure Storage</a>
-								<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum dolor sit amet. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeInUp pb-80">
-						<div class="feature-box">
-							<div class="feature-icon">
-								<a href="feature.html"><img src="images/feature-5.png" alt="Low Cost"></a>
-							</div>
-							<div class="feature-contain pt-25">
-								<a href="feature.html" class="feature-title">Low Cost</a>
-								<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum dolor sit amet. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeInUp pb-80">
-						<div class="feature-box">
-							<div class="feature-icon">
-								<a href="feature.html"><img src="images/feature-6.png" alt="Several Profit"></a>
-							</div>
-							<div class="feature-contain pt-25">
-								<a href="feature.html" class="feature-title">Several Profit</a>
-								<p class="feature-des">Lorem ipsum dolor sit amet, consectetur adipi-sicing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, labore et.Lorem ipsum dolor sit amet. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <main>
 
-		<section class="timeline lightskyblue ptb-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="section-heading text-center pb-65">
-							<label class="sub-heading">roadmap</label>
-							<h2 class="heading-title">The Timeline</h2>
-							<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
-				</div>
-				<div class="main-roadmap">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="h-border wow fadeInLeft"></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="roadmap-slider owl-carousel">
-								<div class="roadmap wow fadeInLeft">
-									<div class="roadmap-box text-center">
-										<div class="date-title">March 2021</div>
-										<div class="map-graphic">
-											<div class="small-round"><span></span></div>
-											<div class="v-row"></div>
-										</div>
-										<div class="roadmap-detail-box">
-											<p>Lorem Ipsum has been the industry's standard dummy text </p>
-										</div>
-									</div>
-								</div>
-								<div class="roadmap wow fadeInLeft">
-									<div class="roadmap-box text-center">
-										<div class="date-title">April 2021</div>
-										<div class="map-graphic">
-											<div class="small-round"><span></span></div>
-											<div class="v-row"></div>
-										</div>
-										<div class="roadmap-detail-box">
-											<p>Lorem Ipsum has been the industry's standard dummy text </p>
-										</div>
-									</div>
-								</div>
-								<div class="roadmap wow fadeInLeft">
-									<div class="roadmap-box text-center">
-										<div class="date-title">May 2021</div>
-										<div class="map-graphic">
-											<div class="small-round"><span></span></div>
-											<div class="v-row"></div>
-										</div>
-										<div class="roadmap-detail-box">
-											<p>Lorem Ipsum has been the industry's standard dummy text </p>
-										</div>
-									</div>
-								</div>
-								<div class="roadmap wow fadeInLeft">
-									<div class="roadmap-box text-center">
-										<div class="date-title">August 2021</div>
-										<div class="map-graphic">
-											<div class="small-round"><span></span></div>
-											<div class="v-row"></div>
-										</div>
-										<div class="roadmap-detail-box">
-											<p>Lorem Ipsum has been the industry's standard dummy text </p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div style="background-image:url('blockchain.jpg'); background-size: 100% auto;" class="text-center ">
+            <img src="img/blockchain.jpg" class="img-fluid mx-auto d-block " alt="...">
+            <p class="h1 pt-3">Health Insurance Powered by Blockchain</p>
+        <div class="pt-5 pb-5">
+            <button type="button" class="btn btn-primary btn-lg">View Plans</button>
+            </div>
+        </div>
 
-		<section class="team-part pt-100 pb-55">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="section-heading text-center pb-65">
-							<label class="sub-heading">meet the team</label>
-							<h2 class="heading-title">Our Team</h2>
-							<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 wow fadeInLeft pb-45">
-						<div class="team-box flex-align">
-							<div class="team-img">
-								<a href="team.html"><img src="images/team-1.jpg" alt="team member"></a>
-							</div>
-							<div class="team-des">
-								<a href="team.html" class="member-name">John Doe</a>
-								<p class="member-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur</p>
-								<ul class="pt-15">
-									<li><a href="index.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 pb-45 wow fadeInRight">
-						<div class="team-box flex-align">
-							<div class="team-img">
-								<a href="team.html"><img src="images/team-2.jpg" alt="team member"></a>
-							</div>
-							<div class="team-des">
-								<a href="team.html" class="member-name">John Doe</a>
-								<p class="member-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur</p>
-								<ul class="pt-15">
-									<li><a href="index.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 wow fadeInLeft pb-45">
-						<div class="team-box flex-align">
-							<div class="team-img">
-								<a href="team.html"><img src="images/team-3.jpg" alt="team member"></a>
-							</div>
-							<div class="team-des">
-								<a href="team.html" class="member-name">John Doe</a>
-								<p class="member-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur</p>
-								<ul class="pt-15">
-									<li><a href="index.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 pb-45 wow fadeInRight">
-						<div class="team-box flex-align">
-							<div class="team-img">
-								<a href="team.html"><img src="images/team-4.jpg" alt="team member"></a>
-							</div>
-							<div class="team-des">
-								<a href="team.html" class="member-name">John Doe</a>
-								<p class="member-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur</p>
-								<ul class="pt-15">
-									<li><a href="index.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    
 
-		<section id="tokensale-part" class="token-sale parallax lightskyblue ptb-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 wow fadeInLeft flex-align">
-						<div class="w-100">
-							<div class="section-heading pb-20">
-								<label class="sub-heading">token</label>
-								<h2 class="heading-title">Token Sale</h2>
-								<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-							</div>
-							<div class="token-graphic-detail">
-								<ul>
-									<li class="color-code-1">73% Finacial Overhead</li>
-									<li class="color-code-2">55% Bonus & found</li>
-									<li class="color-code-3">12% Gift Code Inventory</li>
-									<li class="color-code-4">32% Bounty and Overhead</li>
-									<li class="color-code-5">38% it infastrueture</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 flex-align justify-center-r">
-						<div class="token-graph w-100">
-							<div class='donut'>
-						        <div data-lcolor="#f8c04e">12.2</div>
-						        <div data-lcolor="#ac56f7">32.6</div>
-						        <div data-lcolor="#61f89f">38.2</div>
-						        <div data-lcolor="#5ad6f8">55.2</div>
-						        <div data-lcolor="#f85d77">73.2</div>
-						    </div>
-					        <div class="graph-logo">
-					        	<img src="images/graph-logo.png" alt="cryptoz">
-					        </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
 
-		<section class="blog-part ptb-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="section-heading text-center pb-65">
-							<label class="sub-heading">news</label>
-							<h2 class="heading-title">Our Blog</h2>
-							<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
-				</div>
-				<div class="blog-slider owl-carousel">
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-1.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p class="blog-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-2.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-3.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-1.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p class="blog-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-2.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-3.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-1.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p class="blog-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-2.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-					<div class="blog-box wow fadeInUp">
-						<div class="blog-img mb-15">
-							<a href="blog-detail.html"><img src="images/blog-3.jpg" alt="blog"></a>
-						</div>
-						<div class="blog-des-box">
-							<a href="blog-detail.html" class="blog-title">Cryptocash is a clean, modern template clean</a>
-							<ul class="blog-date">
-								<li>March 20,2021</li>
-								<li>by John Doe</li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur </p>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="container marketing">
 
-		<section class="ico-apps parallax-2 lightskyblue pt-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 wow fadeInLeft flex-bottom order-r-2">
-						<div class="ico-apps-img w-100 text-center">
-							<img src="images/ico-img.png" alt="mobile apps">
-						</div>
-					</div>
-					<div class="col-lg-6 wow fadeInRight pb-100 order-r-1">
-						<div class="section-heading pb-20">
-							<label class="sub-heading">ico apps</label>
-							<h2 class="heading-title">ICO Mobile App</h2>
-							<p class="heading-des pb-20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley  also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>
 
-							<ul class="check-list mb-30">
-								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Crypto-news curation</p></li>
-								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Natural Language Understanding</p></li>
-								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Et harum quidem rerum facilis est et expedita distinctio.</p></li>
-							</ul>
-							<a href="index.html#" class="btn">get the app now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <h2>Heading</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is
+                        the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>
 
-		<section class="faq-part pt-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="section-heading text-center pb-65">
-							<label class="sub-heading">Faqs</label>
-							<h2 class="heading-title">Frequently Asked questions</h2>
-							<p class="heading-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<ul class="nav nav-tab Frequently-tabs pb-55">
-							<li>
-							    <a class="tab-link active" href="javascript:void(0)" data-tab="tab-1">general</a>
-							</li>
-							<li>
-							    <a class="tab-link" href="javascript:void(0)" data-tab="tab-2">pre-ico & ico</a>
-							</li>
-							<li>
-							    <a class="tab-link" href="javascript:void(0)" data-tab="tab-3">Tokens</a>
-							</li>
-							<li>
-							    <a class="tab-link" href="javascript:void(0)" data-tab="tab-4">client</a>
-							</li>
-							<li>
-							    <a class="tab-link" href="javascript:void(0)" data-tab="tab-5">legal</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<div class="tab-content">
-						  	<div class="tab-panel active" id="tab-1">
-						  		<div class="row">
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What is Ico Crypto?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What cryptocurrencies can I use to purchase? </a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How can I participate in the ICO Token sale?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How do I benefit from the ICO Token?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  		</div>
-						  	</div>
-						  	<div class="tab-panel" id="tab-2">
-						  		<div class="row">
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How can I participate in the ICO Token sale?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What is Ico Crypto?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What cryptocurrencies can I use to purchase? </a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  		</div>
-						  	</div>
-						  	<div class="tab-panel" id="tab-3">
-						  		<div class="row">
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How can I participate in the ICO Token sale?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What cryptocurrencies can I use to purchase? </a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What is Ico Crypto?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  		</div>
-						  	</div>
-						  	<div class="tab-panel" id="tab-4">
-						  		<div class="row">
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How can I participate in the ICO Token sale?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What cryptocurrencies can I use to purchase? </a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How do I benefit from the ICO Token?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What is Ico Crypto?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  		</div>
-						  	</div>
-						  	<div class="tab-panel" id="tab-5">
-						  		<div class="row">
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What cryptocurrencies can I use to purchase? </a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">How do I benefit from the ICO Token?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  			<div class="col-md-6 pb-65">
-						  				<div class="faq-tab">
-						  					<a href="faq.html" class="qus-title">What is Ico Crypto?</a>
-						  					<p class="qus-des pt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged.</p>
-						  				</div>
-						  			</div>
-						  		</div>
-						  	</div>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</section>
+                    <h2>Heading</h2>
+                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                        second column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg>
 
-		<footer class="bg-pattern lightskyblue ptb-100">
-			<div class="container">
-				<div class="footer">
-					<div class="row">
-						<div class="col-lg-4 col-md-6">
-							<div class="footer-logo pb-25">
-							<a href="index.html"><img src="images/logo.png" alt="Cryptcon"></a>
-						</div>
-							<div class="footer-icon">
-								<ul>
-									<li><a href="index.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									<li><a href="index.html#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="footer-link">
-								<ul>
-									<li><a href="index.html#">What is ico</a></li>
-									<li><a href="index.html#">ICO Apps</a></li>
-									<li><a href="index.html#">Join Us</a></li>
-									<li><a href="token-sale.html">Tokens</a></li>
-									<li><a href="index.html#">Whitepaper</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="roadmap.html">Roadmap</a></li>
-									<li><a href="team.html">Teams</a></li>
-									<li><a href="faq.html">Faq</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="subscribe">
-								<div class="form-group">
-								    <label>Subscribe to our Newsleter</label>
-								    <input type="email" class="form-control" placeholder="Enter your email Address">
-								    <input type="submit" name="submit" value="Subscribe" class="submit">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="copyright">
-					<div class="row">
-						<div class="col-lg-6">
-							<p>© Cryptcon all Rights Reserved. Designed By <a href="index.html#">TemplatesCoder.com</a></p>
-						</div>
-						<div class="col-lg-6">
-							<ul>
-								<li><a href="index.html#">Terms & Condition</a></li>
-								<li><a href="index.html#">Privacy Policy</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/snap.svg-min.js"></script>
-		<script src="js/jquery.listtopie.min.js"></script>
-		<script src="js/animation.js"></script>
-		<script src="js/custom.js"></script>
-		
-	</body>
+                    <h2>Heading</h2>
+                    <p>And lastly this, the third column of representative placeholder content.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container pt-5">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2022 Team14 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+
+</body>
 
 </html>
